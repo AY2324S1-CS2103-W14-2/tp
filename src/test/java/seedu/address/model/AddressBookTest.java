@@ -93,13 +93,13 @@ public class AddressBookTest {
     }
 
     @Test
-    public void hasMeeting_meetingInNotenote_returnsTrue() {
+    public void hasMeeting_meetingInNoteNote_returnsTrue() {
         addressBook.addMeeting(CS2103);
         assertTrue(addressBook.hasMeeting(CS2103));
     }
 
     @Test
-    public void hasMeeting_meetingNotInNotenote_returnsFalse() {
+    public void hasMeeting_meetingNotInNoteNote_returnsFalse() {
         assertFalse(addressBook.hasMeeting(CS2103));
     }
 

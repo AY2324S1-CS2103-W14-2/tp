@@ -12,7 +12,7 @@ import seedu.address.model.contact.Contact;
 import seedu.address.model.note.Note;
 
 /**
- * Represents a Meeting in Notenote.
+ * Represents a Meeting in NoteNote.
  * Guarantees: details are present and not null, field values are validated.
  */
 public class Meeting implements Comparable<Meeting> {

@@ -304,7 +304,7 @@ _{more aspects and alternatives to be added}_
 
 #### Proposed Implementation
 
-The proposed command history and auto-complete mechanism is facilitated by `CommandHistory`. It extends `Notenote` with a command history, stored internally as `commandList`. Additionally, it implements the following operations:
+The proposed command history and auto-complete mechanism is facilitated by `CommandHistory`. It extends `NoteNote` with a command history, stored internally as `commandList`. Additionally, it implements the following operations:
 
 * `CommandHistory#addCommand(String command)` - Adds the executed command to the command history.
 * `CommandHistory#getFilteredCommands(String input)` - Retrieves a list of commands from the command history that starts with the given input.
@@ -487,15 +487,15 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 ### Use cases
 
-(For all use cases below, the **System** is the `Notenote` and the **Actor** is the `user`, unless specified otherwise)
+(For all use cases below, the **System** is the `NoteNote` and the **Actor** is the `user`, unless specified otherwise)
 
 **UC01 - Create a meeting**
 
 **MSS**
 
 1. User requests to create a meeting specifying meeting name, notes, and contact(s).
-2. Notenote creates the meeting card.
-3. Notenote displays the newly created meeting card.
+2. NoteNote creates the meeting card.
+3. NoteNote displays the newly created meeting card.
 
     Use case ends.
 
@@ -503,14 +503,14 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 * 1a. The request is in an improper format.
 
-    * 1a1. Notenote shows an error message.
+    * 1a1. NoteNote shows an error message.
     * 1a2. User request to create a meeting in the correct format.
 
       Use case resumes at step 2.
 
-* 1b. The specified contact(s) do/does not exist in Notenote.
+* 1b. The specified contact(s) do/does not exist in NoteNote.
 
-    * 1b1. Notenote shows an error message.
+    * 1b1. NoteNote shows an error message.
 
         Use case ends.
 
@@ -519,8 +519,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 **MSS**
 
 1. User requests to delete a meeting specifying meeting index.
-2. Notenote validates the provided index, retrieves the corresponding meeting, and deletes it.
-3. Notenote confirms the deletion and updates the display.
+2. NoteNote validates the provided index, retrieves the corresponding meeting, and deletes it.
+3. NoteNote confirms the deletion and updates the display.
 
     Use case ends.
 
@@ -530,7 +530,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
     * <ins>(Refer to UC01, 1a)</ins>
 
-* 1b. The specified meeting index is invalid or does not exist in Notenote.
+* 1b. The specified meeting index is invalid or does not exist in NoteNote.
 
     * <ins>(Refer to UC01, 1b)</ins>
 
@@ -540,8 +540,8 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 **MSS**
 
 1. User requests to edit a meeting specifying meeting index and changes to be made (e.g., meeting title, time, etc.).
-2. Notenote validates the provided index, retrieves the corresponding meeting, and applies the requested changes.
-3. Notenote saves the changes and displays the updated meeting card.
+2. NoteNote validates the provided index, retrieves the corresponding meeting, and applies the requested changes.
+3. NoteNote saves the changes and displays the updated meeting card.
 
     Use case ends.
 
@@ -551,7 +551,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
     * <ins>(Refer to UC01, 1a)</ins>
 
-* 1b. The specified meeting index is invalid or does not exist in Notenote.
+* 1b. The specified meeting index is invalid or does not exist in NoteNote.
 
     * <ins>(Refer to UC01, 1b)</ins>
 
@@ -561,15 +561,15 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 1. User selects a meeting and updates it with notes/comments/remarks.
 2. The meeting is updated with the given notes/comments/remarks.
-3. Notenote displays the meeting with the updated notes/comments/remarks.
+3. NoteNote displays the meeting with the updated notes/comments/remarks.
 
     Use case ends.
 
 **Extensions**
 
-* 1a. The specified meeting(s) do/does not exist in Notenote.
+* 1a. The specified meeting(s) do/does not exist in NoteNote.
 
-    * 1a1. Notenote shows an error message.
+    * 1a1. NoteNote shows an error message.
     * 1a2. User acknowledges the error message.
 
       Use case ends.
@@ -580,7 +580,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 1. User <ins>creates a meeting (UC01) .</ins>
 2. User requests to add contacts to the meeting.
-3. Notenote displays the details of the meeting with the newly added contact.
+3. NoteNote displays the details of the meeting with the newly added contact.
 
     Use case ends.
 
@@ -588,14 +588,14 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 * 2a. The request is in an improper format.
 
-    * 2a1. Notenote shows an error message.
+    * 2a1. NoteNote shows an error message.
     * 2a2. User request to add contacts to the meeting in the correct format.
 
       Use case resumes at step 3.
 
-* 2b. The specified contact(s)/meeting do/does not exist in Notenote.
+* 2b. The specified contact(s)/meeting do/does not exist in NoteNote.
 
-    * 2b1. Notenote shows an error message.
+    * 2b1. NoteNote shows an error message.
     * 2b2. User requests to add contacts with existing contact(s)/meeting.
 
       Use case resumes at step 3.

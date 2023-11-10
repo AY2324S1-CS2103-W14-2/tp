@@ -1,7 +1,7 @@
 # User Guide
 
-Notenote is a desktop meeting note-taking application that allows users to efficiently record notes for their contact.
-Notenote provide tools for organizing and categorizing contacts in a systematic and easy-to-navigate structure.
+NoteNote is a desktop meeting note-taking application that allows users to efficiently record notes for their contact.
+NoteNote provide tools for organizing and categorizing contacts in a systematic and easy-to-navigate structure.
 
 ## Table of Contents
 - [Mode](#mode)

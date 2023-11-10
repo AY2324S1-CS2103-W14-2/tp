@@ -14,7 +14,7 @@ import seedu.address.model.meeting.Meeting;
 import seedu.address.ui.AppState;
 
 /**
- * Add a meeting to Notenote.
+ * Add a meeting to NoteNote.
  */
 public class AddMeetingCommand extends Command {
 

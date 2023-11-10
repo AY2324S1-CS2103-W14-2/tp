@@ -118,7 +118,7 @@ public class AddressBook implements ReadOnlyAddressBook {
     }
 
     /**
-     * Returns true if a meeting given {@code meeting} exists in Notenote.
+     * Returns true if a meeting given {@code meeting} exists in NoteNote.
      */
     public boolean hasMeeting(Meeting meeting) {
         requireNonNull(meeting);
@@ -127,7 +127,7 @@ public class AddressBook implements ReadOnlyAddressBook {
     }
 
     /**
-     * Adds a meeting to Notenote.
+     * Adds a meeting to NoteNote.
      */
     public void addMeeting(Meeting meeting) {
         meetings.add(meeting);

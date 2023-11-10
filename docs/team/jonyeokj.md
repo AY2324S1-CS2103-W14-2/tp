@@ -3,9 +3,9 @@ layout: page
 title: Jonathan Yeo's Project Portfolio Page
 ---
 
-### Project: Notenote
+### Project: NoteNote
 
-Notenote is a desktop note-taking application that allows users to efficiently record notes for their contacts. It provides tools for organizing and categorizing contacts in a systematic and easy-to-navigate structure. Users interact with it through a CLI, and it has a GUI created with JavaFX. It is written in Java
+NoteNote is a desktop note-taking application that allows users to efficiently record notes for their contacts. It provides tools for organizing and categorizing contacts in a systematic and easy-to-navigate structure. Users interact with it through a CLI, and it has a GUI created with JavaFX. It is written in Java
 
 Given below are my contributions to the project.
 

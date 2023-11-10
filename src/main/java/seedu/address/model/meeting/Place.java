@@ -4,7 +4,7 @@ import static java.util.Objects.requireNonNull;
 import static seedu.address.commons.util.AppUtil.checkArgument;
 
 /**
- * Represents a Meeting's place in Notenote.
+ * Represents a Meeting's place in NoteNote.
  * Guarantees: immutable; is valid as declared in {@link #isValidPlace(String)}
  */
 public class Place {

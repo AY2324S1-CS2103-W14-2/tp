@@ -117,7 +117,7 @@ public interface Model {
     void setMeeting(Meeting target, Meeting editedMeeting);
 
     /**
-     * Returns true if a meeting with the same id {@code meeting} exists in Notenote.
+     * Returns true if a meeting with the same id {@code meeting} exists in NoteNote.
      */
     boolean hasMeeting(Meeting meeting);
 

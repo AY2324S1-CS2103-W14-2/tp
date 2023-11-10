@@ -3,7 +3,7 @@ layout: page
 title: Jacob Cuison's Project Portfolio Page
 ---
 
-### Project: Notenote
+### Project: NoteNote
 
 NoteNote is a desktop note-taking application that allows users to efficiently record notes for their contacts. It
 provides tools for organizing and categorizing contacts in a systematic and easy-to-navigate structure. Users interact

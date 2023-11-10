@@ -10,7 +10,7 @@ import seedu.address.ui.AppState.ModeType;
 
 
 /**
- * Toggles the mode of Notenote between contacts and meetings mode.
+ * Toggles the mode of NoteNote between contacts and meetings mode.
  */
 public class ModeCommand extends Command {
 

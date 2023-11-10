@@ -96,14 +96,14 @@ public class ModelManagerTest {
     }
 
     @Test
-    public void hasMeeting_personInNotenote_returnsTrue() {
+    public void hasMeeting_personInNoteNote_returnsTrue() {
         Meeting meeting = new MeetingBuilder().build();
         modelManager.addMeeting(meeting);
         assertTrue(modelManager.hasMeeting(meeting));
     }
 
     @Test
-    public void hasMeeting_personNotInNotenote_returnsFalse() {
+    public void hasMeeting_personNotInNoteNote_returnsFalse() {
         Meeting meeting = new MeetingBuilder().build();
         assertFalse(modelManager.hasMeeting(meeting));
     }

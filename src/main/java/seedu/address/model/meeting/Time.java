@@ -9,7 +9,7 @@ import java.time.format.DateTimeParseException;
 import java.time.format.ResolverStyle;
 
 /**
- * Represents a Meeting's time in Notenote.
+ * Represents a Meeting's time in NoteNote.
  * Guarantees: immutable; is valid as declared in {@link #isValidTime(String)}
  */
 public class Time {
